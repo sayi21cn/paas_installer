@@ -14,7 +14,7 @@ CloudFoundry一键安装脚本
 deploy: 指定本次安装的模块，可选值：nats hm9000 ccng uaa ha dea loggr gorouter all，如果指定为all，则在本地单节点安装全部模块； 
 domain: 指定域名，安装完成后，CC节点endpoint为: api.[domain]； 
 password： 指定各模块的统一初始密码，包括但不限于uaadb、ccdb、nats等密码； 
-org： 指定默认组织，目前默认为dtdream。
+org： 指定默认组织。
 
 2、节点分布定制： 
 component.[name]: name为模块名，可选值与deploy一致，且deploy中指定的模块，此处必须定制，另外nats节点也必须定制（大部分模块都依赖与nats）； 
