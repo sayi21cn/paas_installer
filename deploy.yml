@@ -1,0 +1,381 @@
+---
+deployment: cf
+
+jobs:
+  - name: database
+    templates:
+      - postgres
+
+  - name: nats
+    templates:
+      - nats
+      - nats_stream_forwarder
+
+  - name: dea
+    templates:
+      - dea_next
+      - dea_logging_agent
+      - metron_agent 
+
+  - name: router
+    templates:
+      - gorouter
+
+  - name: ccng
+    templates:
+      - cloud_controller_ng
+      - cloud_controller_worker
+      - cloud_controller_clock
+
+  - name: haproxy
+    templates:
+      - haproxy
+
+  - name: hm9000
+    templates:
+      - etcd
+      - hm9000
+      - etcd_metrics_server
+
+  - name: logger
+    templates:
+      - loggregator_trafficcontroller
+      - doppler
+
+  - name: uaa
+    templates:
+      - uaa
+
+  - name: collector
+    templates:
+      - collector
+
+  - name: metron
+    templates:
+      - metron_agent
+
+properties:
+  networks:
+    apps: default
+
+  domain: dtbox.dtdream.com
+  ssl:
+    skip_cert_verify: true
+  system_domain: dtbox.dtdream.com
+  system_domain_organization: dtdream
+  app_domains:
+    - dtbox.dtdream.com
+
+  disk_quota_enabled: true
+
+  nats:
+    user: nats
+    password: DreamDT228
+    address: 10.117.36.19
+    port: 4222
+    machines:
+      - 10.117.36.19
+      - 10.252.117.198
+
+  dea_next:
+    heartbeat_interval_in_seconds: 60
+
+  cc: &cc
+    bulk_api_password: DreamDT228
+    srv_api_uri: https://api.dtbox.dtdream.com
+    db_logging_level: warn
+    ccng.logging_level: warn
+    db_encryption_key: DreamDT228
+    quota_definitions:
+      default:
+        memory_limit: 10240
+        total_services: 100
+        non_basic_services_allowed: true
+        total_routes: 1000
+        trial_db_allowed: true
+    hm9000_noop: false
+    staging_upload_user: uploaduser
+    staging_upload_password: DreamDT228
+    install_buildpacks:
+      - name: java_buildpack
+        package: buildpack_java
+      - name: ruby_buildpack
+        package: buildpack_ruby
+      - name: nodejs_buildpack
+        package: buildpack_nodejs
+    security_group_definitions:
+      - name: public_networks
+        rules:
+          - protocol: all
+            destination: 0.0.0.0-9.255.255.255
+          - protocol: all
+            destination: 11.0.0.0-169.253.255.255
+          - protocol: all
+            destination: 169.255.0.0-172.15.255.255
+          - protocol: all
+            destination: 172.32.0.0-192.167.255.255
+          - protocol: all
+            destination: 192.169.0.0-255.255.255.255
+      - name: private_networks
+        rules:
+          - protocol: all
+            destination: 10.0.0.0-10.255.255.255
+          - protocol: all
+            destination: 172.16.0.0-172.31.255.255
+          - protocol: all
+            destination: 192.168.0.0-192.168.255.255
+      - name: dns
+        rules:
+          - protocol: tcp
+            destination: 0.0.0.0/0
+            ports: '53'
+          - protocol: udp
+            destination: 0.0.0.0/0
+            ports: '53'
+    default_running_security_groups:
+      - public_networks
+      - private_networks
+      - dns
+    default_staging_security_groups:
+      - public_networks
+      - private_networks
+      - dns
+    internal_api_password: DreamDT228
+  ccng: *cc
+
+  ccdb: &ccdb
+    db_scheme: postgres
+    address: 192.168.10.10
+    port: 5524
+    roles:
+      - tag: admin
+        name: ccadmin
+        password: DreamDT228
+    databases:
+      - tag: cc
+        name: ccdb
+        citext: true
+  ccdb_ng: *ccdb
+
+  uaadb:
+    db_scheme: postgresql
+    address: 192.168.10.10
+    port: 5524
+    roles:
+      - tag: admin
+        name: uaaadmin
+        password: DreamDT228
+    databases:
+      - tag: uaa
+        name: uaadb
+        citext: true
+
+  databases:
+    db_scheme: postgres
+    address: 192.168.10.10
+    port: 5524
+    roles:
+      - tag: admin
+        name: ccadmin
+        password: DreamDT228
+      - tag: admin
+        name: uaaadmin
+        password: DreamDT228
+    databases:
+      - tag: cc
+        name: ccdb
+        citext: true
+      - tag: uaa
+        name: uaadb
+        citext: true
+  db: databases
+
+  uaa:
+    login:
+      addnew: false
+      client_secret: DreamDT228
+    url: https://uaa.dtbox.dtdream.com
+    catalina_opts: -Xmx384m -XX:MaxPermSize=128m
+    jwt:
+      signing_key: |
+        -----BEGIN RSA PRIVATE KEY-----
+        MIICXAIBAAKBgQDHFr+KICms+tuT1OXJwhCUmR2dKVy7psa8xzElSyzqx7oJyfJ1
+        JZyOzToj9T5SfTIq396agbHJWVfYphNahvZ/7uMXqHxf+ZH9BL1gk9Y6kCnbM5R6
+        0gfwjyW1/dQPjOzn9N394zd2FJoFHwdq9Qs0wBugspULZVNRxq7veq/fzwIDAQAB
+        AoGBAJ8dRTQFhIllbHx4GLbpTQsWXJ6w4hZvskJKCLM/o8R4n+0W45pQ1xEiYKdA
+        Z/DRcnjltylRImBD8XuLL8iYOQSZXNMb1h3g5/UGbUXLmCgQLOUUlnYt34QOQm+0
+        KvUqfMSFBbKMsYBAoQmNdTHBaz3dZa8ON9hh/f5TT8u0OWNRAkEA5opzsIXv+52J
+        duc1VGyX3SwlxiE2dStW8wZqGiuLH142n6MKnkLU4ctNLiclw6BZePXFZYIK+AkE
+        xQ+k16je5QJBAN0TIKMPWIbbHVr5rkdUqOyezlFFWYOwnMmw/BKa1d3zp54VP/P8
+        +5aQ2d4sMoKEOfdWH7UqMe3FszfYFvSu5KMCQFMYeFaaEEP7Jn8rGzfQ5HQd44ek
+        lQJqmq6CE2BXbY/i34FuvPcKU70HEEygY6Y9d8J3o6zQ0K9SYNu+pcXt4lkCQA3h
+        jJQQe5uEGJTExqed7jllQ0khFJzLMx0K6tj0NeeIzAaGCQz13oo2sCdeGRHO4aDh
+        HH6Qlq/6UOV5wP8+GAcCQFgRCcB+hrje8hfEEefHcFpyKH+5g1Eu1k0mLrxK2zd+
+        4SlotYRHgPCEubokb2S1zfZDWIXW3HmggnGgM949TlY=
+        -----END RSA PRIVATE KEY-----
+      verification_key: |
+        -----BEGIN PUBLIC KEY-----
+        MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHFr+KICms+tuT1OXJwhCUmR2d
+        KVy7psa8xzElSyzqx7oJyfJ1JZyOzToj9T5SfTIq396agbHJWVfYphNahvZ/7uMX
+        qHxf+ZH9BL1gk9Y6kCnbM5R60gfwjyW1/dQPjOzn9N394zd2FJoFHwdq9Qs0wBug
+        spULZVNRxq7veq/fzwIDAQAB
+        -----END PUBLIC KEY-----
+    cc:
+      client_secret: DreamDT228
+    admin:
+      client_secret: DreamDT228
+    batch:
+      username: batch-username
+      password: DreamDT228
+    clients:
+      cloud_controller_username_lookup:
+        secret: DreamDT228
+      doppler:
+        authorities: uaa.resource
+        secret: DreamDT228
+    scim:
+      users:
+      - admin|DreamDT228|scim.write,scim.read,openid,cloud_controller.admin,doppler.firehose
+
+  etcd:
+    machines:
+      - 10.117.36.19
+      - 10.252.117.198
+
+  etcd_metrics_server:
+    nats:
+      username: nats
+      password: DreamDT228
+      machines:
+        - 10.117.36.19
+        - 10.252.117.198
+
+  router:
+    port: 8888
+    status:
+      port: 18888
+      user: gorouter
+      password: DreamDT228
+    servers:
+      z1:
+        - 10.168.222.155
+      z2:
+        - 10.117.107.29
+
+  login:
+    enabled: false
+
+  loggregator:
+    incoming_port: 13456
+    dropsonde_incoming_port: 13457
+    outgoing_dropsonde_port: 18081
+    doppler_port: 8081
+
+  metron_agent:
+    zone: default
+    status:
+      user: trafic_controller
+      password: DreamDT228
+      port: 6799
+    incoming_port: 3456
+    dropsonde_incoming_port: 3457
+
+  doppler:
+    zone: default
+    status:
+      user: loggregator
+      password: DreamDT228
+      port: 5768
+    incoming_port: 13456
+    dropsonde_incoming_port: 13457
+    outgoing_port: 8081
+    servers:
+      default:
+        - 10.168.222.155
+        - 10.117.107.29
+
+  traffic_controller:
+    zone: default
+    status:
+      user: trafic_controller
+      password: DreamDT228
+      port: 6789
+    incoming_port: 23456
+    outgoing_port: 18080
+
+  metron_endpoint:
+    shared_secret: DreamDT228
+    host: 0.0.0.0
+    port: 3456
+    dropsonde_port: 3457
+
+  logger_endpoint:
+   port: 4443
+
+  collector:
+    use_datadog: true
+    datadog:
+      api_key: 23d7a5b897980eb82987dd76fa221702
+      application_key: 2d84cf80c7fb1d30dfe61c75192c7be884532c17
+
+  loggregator_endpoint:
+    shared_secret: DreamDT228
+
+  doppler_endpoint:
+    shared_secret: DreamDT228
+
+  dropsonde:
+    enabled: true
+
+  ha_proxy:
+    ssl_pem: |
+      -----BEGIN CERTIFICATE-----
+      MIID1DCCArwCCQCns3StXP1oRTANBgkqhkiG9w0BAQUFADCBqzELMAkGA1UEBhMC
+      SlAxDjAMBgNVBAgTBVRva3lvMREwDwYDVQQHEwhTaGluanVrdTETMBEGA1UEChMK
+      QXJpZWx3b3JrczEgMB4GA1UECxMXVGhpcmQgRGV2ZWxvcG1lbnQgR3JvdXAxHTAb
+      BgNVBAMUFCouMTAuMzkuMzkuMzkueGlwLmlvMSMwIQYJKoZIhvcNAQkBFhR5dWRh
+      aUBhcmllbHdvcmtzLmNvbTAeFw0xNDA5MDMyMDIwMzRaFw0yNDA4MzEyMDIwMzRa
+      MIGrMQswCQYDVQQGEwJKUDEOMAwGA1UECBMFVG9reW8xETAPBgNVBAcTCFNoaW5q
+      dWt1MRMwEQYDVQQKEwpBcmllbHdvcmtzMSAwHgYDVQQLExdUaGlyZCBEZXZlbG9w
+      bWVudCBHcm91cDEdMBsGA1UEAxQUKi4xMC4zOS4zOS4zOS54aXAuaW8xIzAhBgkq
+      hkiG9w0BCQEWFHl1ZGFpQGFyaWVsd29ya3MuY29tMIIBIjANBgkqhkiG9w0BAQEF
+      AAOCAQ8AMIIBCgKCAQEAtvGBcMTWTq7Psuzy7RfRzIPEA88fOYxUgm+e7si/1MkM
+      Io+hDzum04Ohj+hOZjFgMgDC98NhGIvvRO54iqUnQ9D8f7+fFUCXEZfNuZw6G7dg
+      Aok8HnqERMSrd+Eg5ck5OIgV+oNJDyu07qnm+x9FHTkt0Ukv7WD9qZzyOtCu7znP
+      6s5FJieP/oiYhgu6EzltBGvEdE6RP13cfltNulBe1q//KlR3JoiOUFg9MEqMt9ZE
+      FKNSs7ujMuvS73feU7CSl/gaKsYUQ73ZU0hd04AFGFhAfThW+F2tLiBzBhGK9/LK
+      M5sWEmUPnWfeOSuJIrJTat6dqN15KvRs3+C70zhI4wIDAQABMA0GCSqGSIb3DQEB
+      BQUAA4IBAQBDRwhQyUErazy2X2ncqSsb5UZprZY4eXihph6UTiZSNBEg5PH78TcW
+      Maru20dAxofkdpMKRQoOecb6AGYuBtHCGl932syc+3RgO7JfAmaWe3W1g1E3wNq7
+      TQg8YP8C8dehhxyLT4aQnilOS5oK+cZXO1lSG9+AQC6gR4B/lm0W9CfOwsHd6Nn1
+      fzzOyYDKpk2MV1e+nOOwi3h/CHZehaC/3VAuZJiRktDKfVjTs2sqk/cERljpssCt
+      p3ABTYNbOHrRfNHxn4+Znfw6V1w3sedAQt3rCEpAm3ayv6r/uEy6DW71XFALVWAO
+      PV2GhI2hHWukYPeJesIfgYYpoC4v1c0V
+      -----END CERTIFICATE-----
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEpAIBAAKCAQEAtvGBcMTWTq7Psuzy7RfRzIPEA88fOYxUgm+e7si/1MkMIo+h
+      Dzum04Ohj+hOZjFgMgDC98NhGIvvRO54iqUnQ9D8f7+fFUCXEZfNuZw6G7dgAok8
+      HnqERMSrd+Eg5ck5OIgV+oNJDyu07qnm+x9FHTkt0Ukv7WD9qZzyOtCu7znP6s5F
+      JieP/oiYhgu6EzltBGvEdE6RP13cfltNulBe1q//KlR3JoiOUFg9MEqMt9ZEFKNS
+      s7ujMuvS73feU7CSl/gaKsYUQ73ZU0hd04AFGFhAfThW+F2tLiBzBhGK9/LKM5sW
+      EmUPnWfeOSuJIrJTat6dqN15KvRs3+C70zhI4wIDAQABAoIBAGO6N4PP6buu1A6H
+      2M2ipH3Gfr5M1Iq8kv0f+BXXXauThYf5oCT7sa+wHAyk6MgQto3LmH0UBwQolGCR
+      VyjNayAu9tZ1ETW2piOzCzTZk1u0lSQMx7cdtqj+RTLuiM566TSGCuUrWFJq0xEf
+      kYjnvPd3SiDCstvGecFSi0HArPw/LbxkNFkuRlps90Q9HrVS4ppnTSfhTW02vCWC
+      relITFfSLdGqge85tN33+56/Zqs+bZGfI/sQkWWkyDTNTgWin1tyWnS6GAi/SjvJ
+      JhH+Hi1Q787qa6yRBJH40IU+8sxdnie6qHCVgCf7k9Cht56ID00anof+9tvXmcPm
+      t7o6wzECgYEA2/kOGGrSHKbT+mVHNDR/sGc3rREuAhN7sfw4lfsQuCT1cT5qxGKF
+      Wg1oKa3rn/S8Vz5vbmwJeExdAEeJXm4slwvW64RHYAT2Dd5RiZWYrPcbgV8HmdbO
+      gHlBvHeQ1kI9TPCiUmEfzo9JE2Fr28O7JyYH0BK04gru92Bvc4ZAPW8CgYEA1Ofk
+      JBgq4Ce3A2JjTpOh54NDtzOO7fghyYp/yhO66ta2zVpco2AylS+2o6md7e7CyPcS
+      2LpBpjSiL39DTmsMy+GIKuqfOw3CBsuLQmX4/8u25gOeVyDPIIg7fYva8yRQnzPr
+      BP3FfDuYbG06QEPWswvjFm2axqf+T3r/EIuM2c0CgYEAhJLj5d9rZo09MKodcd86
+      Hcz3hzzVZ7bqU+jZCbtY5kKQEoI1wspF6HIwFv6VBcBwSnx8mCZQxsnvOx3iMqFg
+      CmC+VQ9SHRKgYNdeePdKHuSHFT96y0LlDhUGg1nkVt1xKI/WpKOYkdtVhXKvmLGs
+      d/m5t7OuhJVmVH0wboW47c0CgYEAp62meWLrSbUdpzWy3qzZI3u3Ni8OD4+QFKnW
+      sTFO0iuetybGtQlLbUGxxz4MGtsjX6Fvn285ywvC/ENvn/AhmOUcGCjGlXzlZfKi
+      z/192P/5ITiSWS6G0qlYqS0fmMTuFiSOoVS4V3qcNjDkYr7K9iKTjBNwharDWJeX
+      ENHHcbUCgYBNDNbpRXIDQRiI3n4PCraNKxAcio6QtxVQ4KyLhGG+DRZRsIqNjKtx
+      9z0LY1cw4/u81AuqlBwvAGYlt3rUatNQRarZqA6ac6vPbG8wuvaWhZHPwmcK7AO9
+      wLY3TEx4T1jbBLnmbbIGk3PJXNhsa+Z6J+8v/cvEAXFoQsZz2jnYQw==
+      -----END RSA PRIVATE KEY-----

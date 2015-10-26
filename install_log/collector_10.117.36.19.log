@@ -1,0 +1,1338 @@
++ rvm
++ sudo apt-get update
+Ign http://mirrors.aliyuncs.com trusty InRelease
+Ign http://mirrors.aliyuncs.com trusty-security InRelease
+Ign http://mirrors.aliyuncs.com trusty-updates InRelease
+Ign http://mirrors.aliyuncs.com trusty-proposed InRelease
+Ign http://mirrors.aliyuncs.com trusty-backports InRelease
+Get:1 http://mirrors.aliyuncs.com trusty Release.gpg [933 B]
+Get:2 http://mirrors.aliyuncs.com trusty-security Release.gpg [933 B]
+Get:3 http://mirrors.aliyuncs.com trusty-updates Release.gpg [933 B]
+Get:4 http://mirrors.aliyuncs.com trusty-proposed Release.gpg [933 B]
+Get:5 http://mirrors.aliyuncs.com trusty-backports Release.gpg [933 B]
+Get:6 http://mirrors.aliyuncs.com trusty Release [58.5 kB]
+Ign http://mirrors.aliyun.com trusty InRelease
+Ign http://mirrors.aliyun.com trusty-security InRelease
+Get:7 http://mirrors.aliyuncs.com trusty-security Release [63.5 kB]
+Get:8 http://mirrors.aliyuncs.com trusty-updates Release [63.5 kB]
+Get:9 http://mirrors.aliyuncs.com trusty-proposed Release [211 kB]
+Ign http://mirrors.aliyun.com trusty-updates InRelease
+Get:10 http://mirrors.aliyuncs.com trusty-backports Release [63.5 kB]
+Get:11 http://mirrors.aliyuncs.com trusty/main Sources [1,064 kB]
+Ign http://mirrors.aliyun.com trusty-proposed InRelease
+Ign http://mirrors.aliyun.com trusty-backports InRelease
+Get:12 http://mirrors.aliyun.com trusty Release.gpg [933 B]
+Get:13 http://mirrors.aliyun.com trusty-security Release.gpg [933 B]
+Get:14 http://mirrors.aliyun.com trusty-updates Release.gpg [933 B]
+Get:15 http://mirrors.aliyun.com trusty-proposed Release.gpg [933 B]
+Get:16 http://mirrors.aliyun.com trusty-backports Release.gpg [933 B]
+Get:17 http://mirrors.aliyun.com trusty Release [58.5 kB]
+Get:18 http://mirrors.aliyuncs.com trusty/restricted Sources [5,433 B]
+Get:19 http://mirrors.aliyuncs.com trusty/universe Sources [6,399 kB]
+Get:20 http://mirrors.aliyun.com trusty-security Release [63.5 kB]
+Get:21 http://mirrors.aliyun.com trusty-updates Release [63.5 kB]
+Get:22 http://mirrors.aliyun.com trusty-proposed Release [211 kB]
+Get:23 http://mirrors.aliyun.com trusty-backports Release [63.5 kB]
+Get:24 http://mirrors.aliyun.com trusty/main Sources [1,064 kB]
+Get:25 http://mirrors.aliyun.com trusty/restricted Sources [5,433 B]
+Get:26 http://mirrors.aliyun.com trusty/universe Sources [6,399 kB]
+Get:27 http://mirrors.aliyuncs.com trusty/multiverse Sources [174 kB]
+Get:28 http://mirrors.aliyuncs.com trusty/main amd64 Packages [1,350 kB]
+Get:29 http://mirrors.aliyuncs.com trusty/restricted amd64 Packages [13.0 kB]
+Get:30 http://mirrors.aliyuncs.com trusty/universe amd64 Packages [5,859 kB]
+Get:31 http://mirrors.aliyun.com trusty/multiverse Sources [174 kB]
+Get:32 http://mirrors.aliyun.com trusty/main amd64 Packages [1,350 kB]
+Get:33 http://mirrors.aliyun.com trusty/restricted amd64 Packages [13.0 kB]
+Get:34 http://mirrors.aliyun.com trusty/universe amd64 Packages [5,859 kB]
+Get:35 http://mirrors.aliyuncs.com trusty/multiverse amd64 Packages [132 kB]
+Get:36 http://mirrors.aliyuncs.com trusty/main i386 Packages [1,348 kB]
+Get:37 http://mirrors.aliyuncs.com trusty/restricted i386 Packages [13.4 kB]
+Get:38 http://mirrors.aliyuncs.com trusty/universe i386 Packages [5,866 kB]
+Get:39 http://mirrors.aliyun.com trusty/multiverse amd64 Packages [132 kB]
+Get:40 http://mirrors.aliyun.com trusty/main i386 Packages [1,348 kB]
+Get:41 http://mirrors.aliyun.com trusty/restricted i386 Packages [13.4 kB]
+Get:42 http://mirrors.aliyun.com trusty/universe i386 Packages [5,866 kB]
+Get:43 http://mirrors.aliyuncs.com trusty/multiverse i386 Packages [134 kB]
+Get:44 http://mirrors.aliyuncs.com trusty/main Translation-en [762 kB]
+Get:45 http://mirrors.aliyuncs.com trusty/multiverse Translation-en [102 kB]
+Get:46 http://mirrors.aliyuncs.com trusty/restricted Translation-en [3,457 B]
+Get:47 http://mirrors.aliyuncs.com trusty/universe Translation-en [4,089 kB]
+Get:48 http://mirrors.aliyuncs.com trusty-security/main Sources [94.1 kB]
+Get:49 http://mirrors.aliyuncs.com trusty-security/restricted Sources [2,061 B]
+Get:50 http://mirrors.aliyuncs.com trusty-security/universe Sources [30.5 kB]
+Get:51 http://mirrors.aliyuncs.com trusty-security/multiverse Sources [2,330 B]
+Get:52 http://mirrors.aliyuncs.com trusty-security/main amd64 Packages [343 kB]
+Get:53 http://mirrors.aliyuncs.com trusty-security/restricted amd64 Packages [8,875 B]
+Get:54 http://mirrors.aliyuncs.com trusty-security/universe amd64 Packages [116 kB]
+Get:55 http://mirrors.aliyuncs.com trusty-security/multiverse amd64 Packages [3,686 B]
+Get:56 http://mirrors.aliyuncs.com trusty-security/main i386 Packages [327 kB]
+Get:57 http://mirrors.aliyuncs.com trusty-security/restricted i386 Packages [8,846 B]
+Get:58 http://mirrors.aliyuncs.com trusty-security/universe i386 Packages [116 kB]
+Get:59 http://mirrors.aliyuncs.com trusty-security/multiverse i386 Packages [3,830 B]
+Get:60 http://mirrors.aliyuncs.com trusty-security/main Translation-en [187 kB]
+Get:61 http://mirrors.aliyuncs.com trusty-security/multiverse Translation-en [1,679 B]
+Get:62 http://mirrors.aliyuncs.com trusty-security/restricted Translation-en [2,266 B]
+Get:63 http://mirrors.aliyuncs.com trusty-security/universe Translation-en [67.8 kB]
+Get:64 http://mirrors.aliyun.com trusty/multiverse i386 Packages [134 kB]
+Get:65 http://mirrors.aliyuncs.com trusty-updates/main Sources [234 kB]
+Get:66 http://mirrors.aliyuncs.com trusty-updates/restricted Sources [4,725 B]
+Get:67 http://mirrors.aliyuncs.com trusty-updates/universe Sources [135 kB]
+Get:68 http://mirrors.aliyuncs.com trusty-updates/multiverse Sources [5,143 B]
+Get:69 http://mirrors.aliyuncs.com trusty-updates/main amd64 Packages [619 kB]
+Get:70 http://mirrors.aliyuncs.com trusty-updates/restricted amd64 Packages [15.4 kB]
+Get:71 http://mirrors.aliyun.com trusty/main Translation-en [762 kB]
+Get:72 http://mirrors.aliyuncs.com trusty-updates/universe amd64 Packages [312 kB]
+Get:73 http://mirrors.aliyuncs.com trusty-updates/multiverse amd64 Packages [11.9 kB]
+Get:74 http://mirrors.aliyuncs.com trusty-updates/main i386 Packages [601 kB]
+Get:75 http://mirrors.aliyuncs.com trusty-updates/restricted i386 Packages [15.1 kB]
+Get:76 http://mirrors.aliyuncs.com trusty-updates/universe i386 Packages [313 kB]
+Get:77 http://mirrors.aliyuncs.com trusty-updates/multiverse i386 Packages [12.1 kB]
+Get:78 http://mirrors.aliyuncs.com trusty-updates/main Translation-en [300 kB]
+Get:79 http://mirrors.aliyuncs.com trusty-updates/multiverse Translation-en [6,148 B]
+Get:80 http://mirrors.aliyuncs.com trusty-updates/restricted Translation-en [3,560 B]
+Get:81 http://mirrors.aliyuncs.com trusty-updates/universe Translation-en [166 kB]
+Get:82 http://mirrors.aliyuncs.com trusty-proposed/main Sources [131 kB]
+Get:83 http://mirrors.aliyuncs.com trusty-proposed/restricted Sources [28 B]
+Get:84 http://mirrors.aliyuncs.com trusty-proposed/universe Sources [25.8 kB]
+Get:85 http://mirrors.aliyun.com trusty/multiverse Translation-en [102 kB]
+Get:86 http://mirrors.aliyuncs.com trusty-proposed/multiverse Sources [28 B]
+Get:87 http://mirrors.aliyuncs.com trusty-proposed/main amd64 Packages [134 kB]
+Get:88 http://mirrors.aliyun.com trusty/restricted Translation-en [3,457 B]
+Get:89 http://mirrors.aliyuncs.com trusty-proposed/restricted amd64 Packages [28 B]
+Get:90 http://mirrors.aliyuncs.com trusty-proposed/universe amd64 Packages [27.9 kB]
+Get:91 http://mirrors.aliyuncs.com trusty-proposed/multiverse amd64 Packages [28 B]
+Get:92 http://mirrors.aliyuncs.com trusty-proposed/main i386 Packages [130 kB]
+Get:93 http://mirrors.aliyuncs.com trusty-proposed/restricted i386 Packages [28 B]
+Get:94 http://mirrors.aliyuncs.com trusty-proposed/universe i386 Packages [27.9 kB]
+Get:95 http://mirrors.aliyuncs.com trusty-proposed/multiverse i386 Packages [28 B]
+Get:96 http://mirrors.aliyuncs.com trusty-proposed/main Translation-en [51.5 kB]
+Get:97 http://mirrors.aliyuncs.com trusty-proposed/multiverse Translation-en [28 B]
+Get:98 http://mirrors.aliyuncs.com trusty-proposed/restricted Translation-en [28 B]
+Get:99 http://mirrors.aliyuncs.com trusty-proposed/universe Translation-en [20.0 kB]
+Get:100 http://mirrors.aliyuncs.com trusty-backports/main Sources [5,860 B]
+Get:101 http://mirrors.aliyuncs.com trusty-backports/restricted Sources [28 B]
+Get:102 http://mirrors.aliyun.com trusty/universe Translation-en [4,089 kB]
+Get:103 http://mirrors.aliyuncs.com trusty-backports/universe Sources [28.4 kB]
+Get:104 http://mirrors.aliyuncs.com trusty-backports/multiverse Sources [1,898 B]
+Get:105 http://mirrors.aliyuncs.com trusty-backports/main amd64 Packages [6,288 B]
+Get:106 http://mirrors.aliyuncs.com trusty-backports/restricted amd64 Packages [28 B]
+Get:107 http://mirrors.aliyuncs.com trusty-backports/universe amd64 Packages [32.6 kB]
+Get:108 http://mirrors.aliyuncs.com trusty-backports/multiverse amd64 Packages [1,571 B]
+Get:109 http://mirrors.aliyuncs.com trusty-backports/main i386 Packages [6,293 B]
+Get:110 http://mirrors.aliyuncs.com trusty-backports/restricted i386 Packages [28 B]
+Get:111 http://mirrors.aliyuncs.com trusty-backports/universe i386 Packages [32.6 kB]
+Get:112 http://mirrors.aliyuncs.com trusty-backports/multiverse i386 Packages [1,552 B]
+Get:113 http://mirrors.aliyuncs.com trusty-backports/main Translation-en [3,645 B]
+Get:114 http://mirrors.aliyuncs.com trusty-backports/multiverse Translation-en [1,215 B]
+Get:115 http://mirrors.aliyuncs.com trusty-backports/restricted Translation-en [14 B]
+Get:116 http://mirrors.aliyuncs.com trusty-backports/universe Translation-en [29.6 kB]
+Ign http://mirrors.aliyuncs.com trusty/main Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/multiverse Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/restricted Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/universe Translation-en_US
+Get:117 http://mirrors.aliyun.com trusty-security/main Sources [94.1 kB]
+Get:118 http://mirrors.aliyun.com trusty-security/restricted Sources [2,061 B]
+Get:119 http://mirrors.aliyun.com trusty-security/universe Sources [30.5 kB]
+Get:120 http://mirrors.aliyun.com trusty-security/multiverse Sources [2,330 B]
+Get:121 http://mirrors.aliyun.com trusty-security/main amd64 Packages [343 kB]
+Get:122 http://mirrors.aliyun.com trusty-security/restricted amd64 Packages [8,875 B]
+Get:123 http://mirrors.aliyun.com trusty-security/universe amd64 Packages [116 kB]
+Get:124 http://mirrors.aliyun.com trusty-security/multiverse amd64 Packages [3,686 B]
+Get:125 http://mirrors.aliyun.com trusty-security/main i386 Packages [327 kB]
+Get:126 http://mirrors.aliyun.com trusty-security/restricted i386 Packages [8,846 B]
+Get:127 http://mirrors.aliyun.com trusty-security/universe i386 Packages [116 kB]
+Get:128 http://mirrors.aliyun.com trusty-security/multiverse i386 Packages [3,830 B]
+Get:129 http://mirrors.aliyun.com trusty-security/main Translation-en [187 kB]
+Get:130 http://mirrors.aliyun.com trusty-security/multiverse Translation-en [1,679 B]
+Get:131 http://mirrors.aliyun.com trusty-security/restricted Translation-en [2,266 B]
+Get:132 http://mirrors.aliyun.com trusty-security/universe Translation-en [67.8 kB]
+Get:133 http://mirrors.aliyun.com trusty-updates/main Sources [234 kB]
+Get:134 http://mirrors.aliyun.com trusty-updates/restricted Sources [4,725 B]
+Get:135 http://mirrors.aliyun.com trusty-updates/universe Sources [135 kB]
+Get:136 http://mirrors.aliyun.com trusty-updates/multiverse Sources [5,143 B]
+Get:137 http://mirrors.aliyun.com trusty-updates/main amd64 Packages [619 kB]
+Get:138 http://mirrors.aliyun.com trusty-updates/restricted amd64 Packages [15.4 kB]
+Get:139 http://mirrors.aliyun.com trusty-updates/universe amd64 Packages [312 kB]
+Get:140 http://mirrors.aliyun.com trusty-updates/multiverse amd64 Packages [11.9 kB]
+Get:141 http://mirrors.aliyun.com trusty-updates/main i386 Packages [601 kB]
+Get:142 http://mirrors.aliyun.com trusty-updates/restricted i386 Packages [15.1 kB]
+Get:143 http://mirrors.aliyun.com trusty-updates/universe i386 Packages [313 kB]
+Get:144 http://mirrors.aliyun.com trusty-updates/multiverse i386 Packages [12.1 kB]
+Get:145 http://mirrors.aliyun.com trusty-updates/main Translation-en [300 kB]
+Get:146 http://mirrors.aliyun.com trusty-updates/multiverse Translation-en [6,148 B]
+Get:147 http://mirrors.aliyun.com trusty-updates/restricted Translation-en [3,560 B]
+Get:148 http://mirrors.aliyun.com trusty-updates/universe Translation-en [166 kB]
+Get:149 http://mirrors.aliyun.com trusty-proposed/main Sources [131 kB]
+Get:150 http://mirrors.aliyun.com trusty-proposed/restricted Sources [28 B]
+Get:151 http://mirrors.aliyun.com trusty-proposed/universe Sources [25.8 kB]
+Get:152 http://mirrors.aliyun.com trusty-proposed/multiverse Sources [28 B]
+Get:153 http://mirrors.aliyun.com trusty-proposed/main amd64 Packages [134 kB]
+Get:154 http://mirrors.aliyun.com trusty-proposed/restricted amd64 Packages [28 B]
+Get:155 http://mirrors.aliyun.com trusty-proposed/universe amd64 Packages [27.9 kB]
+Get:156 http://mirrors.aliyun.com trusty-proposed/multiverse amd64 Packages [28 B]
+Get:157 http://mirrors.aliyun.com trusty-proposed/main i386 Packages [130 kB]
+Get:158 http://mirrors.aliyun.com trusty-proposed/restricted i386 Packages [28 B]
+Get:159 http://mirrors.aliyun.com trusty-proposed/universe i386 Packages [27.9 kB]
+Get:160 http://mirrors.aliyun.com trusty-proposed/multiverse i386 Packages [28 B]
+Get:161 http://mirrors.aliyun.com trusty-proposed/main Translation-en [51.5 kB]
+Get:162 http://mirrors.aliyun.com trusty-proposed/multiverse Translation-en [28 B]
+Get:163 http://mirrors.aliyun.com trusty-proposed/restricted Translation-en [28 B]
+Get:164 http://mirrors.aliyun.com trusty-proposed/universe Translation-en [20.0 kB]
+Get:165 http://mirrors.aliyun.com trusty-backports/main Sources [5,860 B]
+Get:166 http://mirrors.aliyun.com trusty-backports/restricted Sources [28 B]
+Get:167 http://mirrors.aliyun.com trusty-backports/universe Sources [28.4 kB]
+Get:168 http://mirrors.aliyun.com trusty-backports/multiverse Sources [1,898 B]
+Get:169 http://mirrors.aliyun.com trusty-backports/main amd64 Packages [6,288 B]
+Get:170 http://mirrors.aliyun.com trusty-backports/restricted amd64 Packages [28 B]
+Get:171 http://mirrors.aliyun.com trusty-backports/universe amd64 Packages [32.6 kB]
+Get:172 http://mirrors.aliyun.com trusty-backports/multiverse amd64 Packages [1,571 B]
+Get:173 http://mirrors.aliyun.com trusty-backports/main i386 Packages [6,293 B]
+Get:174 http://mirrors.aliyun.com trusty-backports/restricted i386 Packages [28 B]
+Get:175 http://mirrors.aliyun.com trusty-backports/universe i386 Packages [32.6 kB]
+Get:176 http://mirrors.aliyun.com trusty-backports/multiverse i386 Packages [1,552 B]
+Get:177 http://mirrors.aliyun.com trusty-backports/main Translation-en [3,645 B]
+Get:178 http://mirrors.aliyun.com trusty-backports/multiverse Translation-en [1,215 B]
+Get:179 http://mirrors.aliyun.com trusty-backports/restricted Translation-en [14 B]
+Get:180 http://mirrors.aliyun.com trusty-backports/universe Translation-en [29.6 kB]
+Ign http://mirrors.aliyun.com trusty/main Translation-en_US
+Ign http://mirrors.aliyun.com trusty/multiverse Translation-en_US
+Ign http://mirrors.aliyun.com trusty/restricted Translation-en_US
+Ign http://mirrors.aliyun.com trusty/universe Translation-en_US
+Fetched 65.1 MB in 18s (3,447 kB/s)
+Reading package lists...
++ ./scripts/install_ruby.sh
++ '[' '!' -d /root/.rbenv ']'
++ source /root/.profile
+++ '[' /bin/bash ']'
+++ '[' -f /root/.bashrc ']'
+++ . /root/.bashrc
++++ '[' -z '' ']'
++++ return
+++ tty -s
+++ export PATH=/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+++ PATH=/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ rbenv init -
+++ eval 'export PATH="/root/.rbenv/shims:${PATH}"
+export RBENV_SHELL=install_ruby.sh
+rbenv rehash 2>/dev/null
+rbenv() {
+  local command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "`rbenv "sh-$command" "$@"`";;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}'
++++ export PATH=/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ PATH=/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ export RBENV_SHELL=install_ruby.sh
++++ RBENV_SHELL=install_ruby.sh
++++ rbenv rehash
++ rbenv versions
++ local command
++ grep -q 1.9.3-p484
++ command=versions
++ '[' 1 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv versions
++ rbenv versions
++ rbenv local 1.9.3-p484
++ local command
++ command=local
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv local 1.9.3-p484
++ rbenv local 1.9.3-p484
++ gem sources --remove http://rubygems.org/
+source http://rubygems.org/ not present in cache
++ gem sources -a http://ruby.taobao.org/
+http://ruby.taobao.org/ added to sources
++ gem install bundler --no-rdoc --no-ri
+Successfully installed bundler-1.10.6
+1 gem installed
++ rbenv rehash
++ local command
++ command=rehash
++ '[' 1 -gt 0 ']'
++ shift
++ case "$command" in
+++ rbenv sh-rehash
+++ local command
+++ command=sh-rehash
+++ '[' 1 -gt 0 ']'
+++ shift
+++ case "$command" in
+++ command rbenv sh-rehash
+++ rbenv sh-rehash
++ eval 'hash -r 2>/dev/null || true'
+++ hash -r
++ source /root/.profile
+++ '[' /bin/bash ']'
+++ '[' -f /root/.bashrc ']'
+++ . /root/.bashrc
++++ '[' -z '' ']'
++++ return
+++ tty -s
+++ export PATH=/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+++ PATH=/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ rbenv init -
+++ eval 'export PATH="/root/.rbenv/shims:${PATH}"
+export RBENV_SHELL=install.sh
+rbenv rehash 2>/dev/null
+rbenv() {
+  local command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "`rbenv "sh-$command" "$@"`";;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}'
++++ export PATH=/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ PATH=/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++++ export RBENV_SHELL=install.sh
++++ RBENV_SHELL=install.sh
++++ rbenv rehash
++ ./scripts/clone_nise_bosh.sh
+++ ls -A nise_bosh
++ '[' '!' 'bin
+config
+Gemfile
+Gemfile.lock
+lib
+LICENSE
+Rakefile
+README.md
+spec
+.travis.yml' ']'
++ echo ''\''nise_bosh'\'' directory is not empty. Skipping cloning...'
+'nise_bosh' directory is not empty. Skipping cloning...
++ ./scripts/clone_cf_release.sh
++ CF_RELEASE_USE_HEAD=no
+++ rbenv version
+++ cut -f1 '-d '
++ ruby_version=1.9.3-p484
+++ ls -A cf-release
++ '[' '!' 'bosh-lite
+check_travis.rb
+commit_with_shortlog
+config
+CONTRIBUTING.md
+docs
+.drone.yml
+example_manifests
+.final_builds
+Gemfile
+generate_deployment_manifest
+git
+jobs
+LICENSE
+NOTICE
+outdated
+outdated_stats
+packages
+pipeline-image
+README.md
+releases
+.rspec
+.ruby-version
+scripts
+shared
+spec
+src
+staged_shortlog
+templates
+.travis.yml
+update
+update.bat' ']'
++ echo ''\''cf-release'\'' directory is not empty. Skipping cloning...'
+'cf-release' directory is not empty. Skipping cloning...
++ ./scripts/install_environemnt.sh
++ cd nise_bosh
++ sudo ./bin/init
++ bosh_app_dir=/var/vcap
++ bosh_dir=/var/vcap/bosh
++ apt-get update
+Ign http://mirrors.aliyuncs.com trusty InRelease
+Ign http://mirrors.aliyun.com trusty InRelease
+Ign http://mirrors.aliyuncs.com trusty-security InRelease
+Ign http://mirrors.aliyun.com trusty-security InRelease
+Ign http://mirrors.aliyuncs.com trusty-updates InRelease
+Ign http://mirrors.aliyun.com trusty-updates InRelease
+Ign http://mirrors.aliyuncs.com trusty-proposed InRelease
+Ign http://mirrors.aliyun.com trusty-proposed InRelease
+Ign http://mirrors.aliyuncs.com trusty-backports InRelease
+Ign http://mirrors.aliyun.com trusty-backports InRelease
+Hit http://mirrors.aliyuncs.com trusty Release.gpg
+Hit http://mirrors.aliyun.com trusty Release.gpg
+Hit http://mirrors.aliyuncs.com trusty-security Release.gpg
+Hit http://mirrors.aliyun.com trusty-security Release.gpg
+Hit http://mirrors.aliyun.com trusty-updates Release.gpg
+Hit http://mirrors.aliyuncs.com trusty-updates Release.gpg
+Hit http://mirrors.aliyun.com trusty-proposed Release.gpg
+Hit http://mirrors.aliyuncs.com trusty-proposed Release.gpg
+Hit http://mirrors.aliyun.com trusty-backports Release.gpg
+Hit http://mirrors.aliyuncs.com trusty-backports Release.gpg
+Hit http://mirrors.aliyun.com trusty Release
+Hit http://mirrors.aliyun.com trusty-security Release
+Hit http://mirrors.aliyun.com trusty-updates Release
+Hit http://mirrors.aliyun.com trusty-proposed Release
+Hit http://mirrors.aliyuncs.com trusty Release
+Hit http://mirrors.aliyuncs.com trusty-security Release
+Hit http://mirrors.aliyuncs.com trusty-updates Release
+Hit http://mirrors.aliyuncs.com trusty-proposed Release
+Hit http://mirrors.aliyun.com trusty-backports Release
+Hit http://mirrors.aliyuncs.com trusty-backports Release
+Hit http://mirrors.aliyun.com trusty/main Sources
+Hit http://mirrors.aliyun.com trusty/restricted Sources
+Hit http://mirrors.aliyun.com trusty/universe Sources
+Hit http://mirrors.aliyun.com trusty/multiverse Sources
+Hit http://mirrors.aliyun.com trusty/main amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty/main Sources
+Hit http://mirrors.aliyuncs.com trusty/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty/universe Sources
+Hit http://mirrors.aliyuncs.com trusty/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty/restricted amd64 Packages
+Hit http://mirrors.aliyun.com trusty/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty/main i386 Packages
+Hit http://mirrors.aliyun.com trusty/restricted i386 Packages
+Hit http://mirrors.aliyun.com trusty/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty/main Translation-en
+Hit http://mirrors.aliyuncs.com trusty/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty/multiverse amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty/main i386 Packages
+Hit http://mirrors.aliyun.com trusty/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty/restricted i386 Packages
+Hit http://mirrors.aliyuncs.com trusty/universe i386 Packages
+Hit http://mirrors.aliyuncs.com trusty/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty/universe Translation-en
+Hit http://mirrors.aliyun.com trusty-security/main Sources
+Hit http://mirrors.aliyun.com trusty-security/restricted Sources
+Hit http://mirrors.aliyun.com trusty-security/universe Sources
+Hit http://mirrors.aliyuncs.com trusty/main Translation-en
+Hit http://mirrors.aliyun.com trusty-security/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty/universe Translation-en
+Hit http://mirrors.aliyuncs.com trusty-security/main Sources
+Hit http://mirrors.aliyuncs.com trusty-security/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty-security/universe Sources
+Hit http://mirrors.aliyuncs.com trusty-security/multiverse Sources
+Hit http://mirrors.aliyun.com trusty-security/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty-security/restricted amd64 Packages
+Hit http://mirrors.aliyun.com trusty-security/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty-security/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty-security/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-security/restricted i386 Packages
+Hit http://mirrors.aliyun.com trusty-security/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty-security/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty-security/main Translation-en
+Hit http://mirrors.aliyun.com trusty-security/multiverse Translation-en
+Hit http://mirrors.aliyun.com trusty-security/restricted Translation-en
+Hit http://mirrors.aliyun.com trusty-security/universe Translation-en
+Hit http://mirrors.aliyun.com trusty-updates/main Sources
+Hit http://mirrors.aliyuncs.com trusty-security/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty-security/restricted amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/universe Sources
+Hit http://mirrors.aliyuncs.com trusty-security/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty-security/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-security/main i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-security/restricted i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-security/universe i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-security/multiverse i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-security/main Translation-en
+Hit http://mirrors.aliyuncs.com trusty-security/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty-security/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty-security/universe Translation-en
+Hit http://mirrors.aliyuncs.com trusty-updates/main Sources
+Hit http://mirrors.aliyuncs.com trusty-updates/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty-updates/universe Sources
+Hit http://mirrors.aliyuncs.com trusty-updates/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty-updates/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty-updates/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-updates/restricted i386 Packages
+Hit http://mirrors.aliyun.com trusty-updates/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty-updates/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty-updates/main Translation-en
+Hit http://mirrors.aliyun.com trusty-updates/multiverse Translation-en
+Hit http://mirrors.aliyun.com trusty-updates/restricted Translation-en
+Hit http://mirrors.aliyun.com trusty-updates/universe Translation-en
+Hit http://mirrors.aliyun.com trusty-proposed/main Sources
+Hit http://mirrors.aliyun.com trusty-proposed/restricted Sources
+Hit http://mirrors.aliyun.com trusty-proposed/universe Sources
+Hit http://mirrors.aliyun.com trusty-proposed/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty-updates/restricted amd64 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/main amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/universe amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/multiverse amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/restricted i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/universe i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/multiverse i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-updates/main Translation-en
+Hit http://mirrors.aliyuncs.com trusty-updates/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty-updates/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty-updates/universe Translation-en
+Hit http://mirrors.aliyuncs.com trusty-proposed/main Sources
+Hit http://mirrors.aliyuncs.com trusty-proposed/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty-proposed/universe Sources
+Hit http://mirrors.aliyuncs.com trusty-proposed/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty-proposed/main amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/universe amd64 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/restricted i386 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty-proposed/main Translation-en
+Hit http://mirrors.aliyun.com trusty-proposed/multiverse Translation-en
+Hit http://mirrors.aliyun.com trusty-proposed/restricted Translation-en
+Hit http://mirrors.aliyun.com trusty-proposed/universe Translation-en
+Hit http://mirrors.aliyun.com trusty-backports/main Sources
+Hit http://mirrors.aliyun.com trusty-backports/restricted Sources
+Hit http://mirrors.aliyun.com trusty-backports/universe Sources
+Hit http://mirrors.aliyun.com trusty-backports/multiverse Sources
+Hit http://mirrors.aliyun.com trusty-backports/main amd64 Packages
+Hit http://mirrors.aliyun.com trusty-backports/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/multiverse amd64 Packages
+Hit http://mirrors.aliyun.com trusty-backports/universe amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/multiverse amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/restricted i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/main i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/restricted i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/multiverse i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-proposed/main Translation-en
+Hit http://mirrors.aliyuncs.com trusty-proposed/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty-proposed/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty-proposed/universe Translation-en
+Hit http://mirrors.aliyuncs.com trusty-backports/main Sources
+Hit http://mirrors.aliyuncs.com trusty-backports/restricted Sources
+Hit http://mirrors.aliyuncs.com trusty-backports/universe Sources
+Hit http://mirrors.aliyuncs.com trusty-backports/multiverse Sources
+Hit http://mirrors.aliyuncs.com trusty-backports/main amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/restricted amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/universe amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/multiverse amd64 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/main i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/universe i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/multiverse i386 Packages
+Hit http://mirrors.aliyun.com trusty-backports/main Translation-en
+Hit http://mirrors.aliyun.com trusty-backports/multiverse Translation-en
+Hit http://mirrors.aliyun.com trusty-backports/restricted Translation-en
+Hit http://mirrors.aliyun.com trusty-backports/universe Translation-en
+Hit http://mirrors.aliyuncs.com trusty-backports/restricted i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/universe i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/multiverse i386 Packages
+Hit http://mirrors.aliyuncs.com trusty-backports/main Translation-en
+Hit http://mirrors.aliyuncs.com trusty-backports/multiverse Translation-en
+Hit http://mirrors.aliyuncs.com trusty-backports/restricted Translation-en
+Hit http://mirrors.aliyuncs.com trusty-backports/universe Translation-en
+Ign http://mirrors.aliyun.com trusty/main Translation-en_US
+Ign http://mirrors.aliyun.com trusty/multiverse Translation-en_US
+Ign http://mirrors.aliyun.com trusty/restricted Translation-en_US
+Ign http://mirrors.aliyun.com trusty/universe Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/main Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/multiverse Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/restricted Translation-en_US
+Ign http://mirrors.aliyuncs.com trusty/universe Translation-en_US
+Reading package lists...
+++ lsb_release -cs
++ '[' trusty == trusty ']'
++ sed -i -e 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"/' /etc/default/grub
++ update-grub
+Generating grub configuration file ...
+Warning: Setting GRUB_TIMEOUT to a non-zero value when GRUB_HIDDEN_TIMEOUT is set is no longer supported.
+Found linux image: /boot/vmlinuz-3.13.0-64-generic
+Found initrd image: /boot/initrd.img-3.13.0-64-generic
+Found linux image: /boot/vmlinuz-3.13.0-63-generic
+Found initrd image: /boot/initrd.img-3.13.0-63-generic
+Found linux image: /boot/vmlinuz-3.13.0-32-generic
+Found initrd image: /boot/initrd.img-3.13.0-32-generic
+done
++ DEBIAN_FRONTEND=noninteractive
++ apt-get install -o Dpkg::Options::=--force-confnew -f -y --force-yes --no-install-recommends build-essential libssl-dev lsof strace bind9-host dnsutils tcpdump iputils-arping curl wget libcurl3 libcurl3-dev bison libreadline6-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev zip unzip nfs-common flex psmisc apparmor-utils iptables sysstat rsync openssh-server traceroute libncurses5-dev quota libaio1 gdb tripwire libcap2-bin libyaml-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+bison is already the newest version.
+build-essential is already the newest version.
+flex is already the newest version.
+iptables is already the newest version.
+libaio1 is already the newest version.
+libcap2-bin is already the newest version.
+libncurses5-dev is already the newest version.
+libreadline6-dev is already the newest version.
+libxslt1-dev is already the newest version.
+libxslt1.1 is already the newest version.
+lsof is already the newest version.
+psmisc is already the newest version.
+quota is already the newest version.
+strace is already the newest version.
+sysstat is already the newest version.
+zip is already the newest version.
+tripwire is already the newest version.
+bind9-host is already the newest version.
+curl is already the newest version.
+dnsutils is already the newest version.
+libcurl3 is already the newest version.
+libcurl4-openssl-dev is already the newest version.
+libssl-dev is already the newest version.
+libxml2 is already the newest version.
+libxml2-dev is already the newest version.
+libyaml-dev is already the newest version.
+openssh-server is already the newest version.
+rsync is already the newest version.
+tcpdump is already the newest version.
+unzip is already the newest version.
+wget is already the newest version.
+apparmor-utils is already the newest version.
+gdb is already the newest version.
+iputils-arping is already the newest version.
+nfs-common is already the newest version.
+traceroute is already the newest version.
+The following package was automatically installed and is no longer required:
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 108 not upgraded.
++ DEBIAN_FRONTEND=noninteractive
++ apt-get install -o Dpkg::Options::=--force-confnew -f -y --force-yes --no-install-recommends runit
+Reading package lists...
+Building dependency tree...
+Reading state information...
+runit is already the newest version.
+The following package was automatically installed and is no longer required:
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 108 not upgraded.
++ DEBIAN_FRONTEND=noninteractive
++ apt-get install -o Dpkg::Options::=--force-confnew -f -y --force-yes --no-install-recommends gettext
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gettext is already the newest version.
+The following package was automatically installed and is no longer required:
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 108 not upgraded.
++ cat
+++ cat /etc/passwd
+++ cut -f1 -d :
+++ grep '^vcap$' -c
++ '[' 1 -eq 0 ']'
++ echo 'User vcap exists already, skippking adduser...'
+User vcap exists already, skippking adduser...
++ '[' -d /boot/grub ']'
+++ lsb_release -cs
++ '[' trusty == lucid ']'
++ DEBIAN_FRONTEND=noninteractive
++ apt-get install -o Dpkg::Options::=--force-confnew -y -f linux-image-virtual linux-image-extra-virtual
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-image-extra-virtual is already the newest version.
+linux-image-virtual is already the newest version.
+The following package was automatically installed and is no longer required:
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 108 not upgraded.
++ monit_basename=monit-5.2.4
++ cd /tmp
++ wget http://10.168.111.185/blobstore/deptools/monit-5.2.4.tar.gz -O monit-5.2.4.tar.gz
+--2015-09-16 10:52:12--  http://10.168.111.185/blobstore/deptools/monit-5.2.4.tar.gz
+Connecting to 10.168.111.185:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 609225 (595K) [application/octet-stream]
+Saving to: ‘monit-5.2.4.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  8% 1.55M 0s
+    50K .......... .......... .......... .......... .......... 16% 75.9M 0s
+   100K .......... .......... .......... .......... .......... 25% 93.4M 0s
+   150K .......... .......... .......... .......... .......... 33% 53.1M 0s
+   200K .......... .......... .......... .......... .......... 42% 35.6M 0s
+   250K .......... .......... .......... .......... .......... 50% 6.64M 0s
+   300K .......... .......... .......... .......... .......... 58% 16.6M 0s
+   350K .......... .......... .......... .......... .......... 67% 37.4M 0s
+   400K .......... .......... .......... .......... .......... 75%  102M 0s
+   450K .......... .......... .......... .......... .......... 84% 79.4M 0s
+   500K .......... .......... .......... .......... .......... 92%  113M 0s
+   550K .......... .......... .......... .......... ....      100% 86.4M=0.05s
+
+2015-09-16 10:52:12 (12.0 MB/s) - ‘monit-5.2.4.tar.gz’ saved [609225/609225]
+
++ tar xvzf monit-5.2.4.tar.gz
+monit-5.2.4/
+monit-5.2.4/http/
+monit-5.2.4/http/base64.h
+monit-5.2.4/http/processor.h
+monit-5.2.4/http/base64.c
+monit-5.2.4/http/cervlet.c
+monit-5.2.4/http/cervlet.h
+monit-5.2.4/http/engine.h
+monit-5.2.4/http/engine.c
+monit-5.2.4/http/processor.c
+monit-5.2.4/http/httpstatus.h
+monit-5.2.4/p.y
+monit-5.2.4/collector.c
+monit-5.2.4/util.h
+monit-5.2.4/AUTHORS
+monit-5.2.4/ssl.c
+monit-5.2.4/monitrc
+monit-5.2.4/status.c
+monit-5.2.4/CHANGES.txt
+monit-5.2.4/log.c
+monit-5.2.4/net.c
+monit-5.2.4/monit.1
+monit-5.2.4/xmalloc.c
+monit-5.2.4/file.h
+monit-5.2.4/socket.h
+monit-5.2.4/configure.ac
+monit-5.2.4/event.c
+monit-5.2.4/monit.txt
+monit-5.2.4/md5.c
+monit-5.2.4/daemonize.c
+monit-5.2.4/signal.c
+monit-5.2.4/process.h
+monit-5.2.4/configure
+monit-5.2.4/socket.c
+monit-5.2.4/aclocal.m4
+monit-5.2.4/control.c
+monit-5.2.4/config.h.in
+monit-5.2.4/net.h
+monit-5.2.4/Makefile.in
+monit-5.2.4/env.c
+monit-5.2.4/util.c
+monit-5.2.4/sha.h
+monit-5.2.4/install-sh
+monit-5.2.4/alert.c
+monit-5.2.4/l.l
+monit-5.2.4/state.c
+monit-5.2.4/README.SSL
+monit-5.2.4/alert.h
+monit-5.2.4/external/
+monit-5.2.4/external/strftime.c
+monit-5.2.4/md5.h
+monit-5.2.4/http.c
+monit-5.2.4/contrib/
+monit-5.2.4/contrib/monitrc-gentoo
+monit-5.2.4/contrib/rc.monit
+monit-5.2.4/contrib/monit-OSX-startup.README
+monit-5.2.4/contrib/monit.php
+monit-5.2.4/contrib/wap.php
+monit-5.2.4/contrib/monit-OSX-startup.tar.gz
+monit-5.2.4/contrib/waitdate.patch
+monit-5.2.4/contrib/monit.upstart
+monit-5.2.4/contrib/monit_update
+monit-5.2.4/monitor.c
+monit-5.2.4/monit.spec
+monit-5.2.4/validate.c
+monit-5.2.4/process.c
+monit-5.2.4/monitor.h
+monit-5.2.4/gc.c
+monit-5.2.4/device/
+monit-5.2.4/device/device_sysdep.h
+monit-5.2.4/device/sysdep_LINUX.c
+monit-5.2.4/device/sysdep_NETBSD.c
+monit-5.2.4/device/device.h
+monit-5.2.4/device/sysdep_DARWIN.c
+monit-5.2.4/device/sysdep_OPENBSD.c
+monit-5.2.4/device/sysdep_UNKNOWN.c
+monit-5.2.4/device/sysdep_SOLARIS.c
+monit-5.2.4/device/device_common.c
+monit-5.2.4/device/sysdep_AIX.c
+monit-5.2.4/device/sysdep_FREEBSD.c
+monit-5.2.4/device/sysdep_HPUX.c
+monit-5.2.4/COPYING
+monit-5.2.4/README
+monit-5.2.4/state.h
+monit-5.2.4/file.c
+monit-5.2.4/README.DEVELOPER
+monit-5.2.4/doc/
+monit-5.2.4/doc/monit.html
+monit-5.2.4/doc/examples.html
+monit-5.2.4/doc/presentation.odp
+monit-5.2.4/doc/api-docs/
+monit-5.2.4/PLATFORMS
+monit-5.2.4/spawn.c
+monit-5.2.4/protocols/
+monit-5.2.4/protocols/NOTES
+monit-5.2.4/protocols/rsync.c
+monit-5.2.4/protocols/pgsql.c
+monit-5.2.4/protocols/mysql.c
+monit-5.2.4/protocols/ftp.c
+monit-5.2.4/protocols/protocol.c
+monit-5.2.4/protocols/apache_status.c
+monit-5.2.4/protocols/lmtp.c
+monit-5.2.4/protocols/dns.c
+monit-5.2.4/protocols/ntp3.c
+monit-5.2.4/protocols/sip.c
+monit-5.2.4/protocols/nntp.c
+monit-5.2.4/protocols/tns.c
+monit-5.2.4/protocols/ldap2.c
+monit-5.2.4/protocols/smtp.c
+monit-5.2.4/protocols/ldap3.c
+monit-5.2.4/protocols/radius.c
+monit-5.2.4/protocols/http.c
+monit-5.2.4/protocols/dwp.c
+monit-5.2.4/protocols/imap.c
+monit-5.2.4/protocols/default.c
+monit-5.2.4/protocols/gps.c
+monit-5.2.4/protocols/protocol.h
+monit-5.2.4/protocols/pop.c
+monit-5.2.4/protocols/generic.c
+monit-5.2.4/protocols/ssh.c
+monit-5.2.4/protocols/memcache.c
+monit-5.2.4/protocols/clamav.c
+monit-5.2.4/protocols/postfix_policy.c
+monit-5.2.4/protocols/rdate.c
+monit-5.2.4/event.h
+monit-5.2.4/LICENSE
+monit-5.2.4/xml.c
+monit-5.2.4/ssl.h
+monit-5.2.4/sha.c
+monit-5.2.4/m4/
+monit-5.2.4/m4/strftime.m4
+monit-5.2.4/process/
+monit-5.2.4/process/sysdep_LINUX.c
+monit-5.2.4/process/sysdep_NETBSD.c
+monit-5.2.4/process/sysdep_DARWIN.c
+monit-5.2.4/process/sysdep_OPENBSD.c
+monit-5.2.4/process/sysdep_UNKNOWN.c
+monit-5.2.4/process/process_sysdep.h
+monit-5.2.4/process/process_common.c
+monit-5.2.4/process/sysdep_SOLARIS.c
+monit-5.2.4/process/sysdep_AIX.c
+monit-5.2.4/process/sysdep_FREEBSD.c
+monit-5.2.4/process/sysdep_HPUX.c
+monit-5.2.4/sendmail.c
++ cd monit-5.2.4
++ ./configure --prefix=/var/vcap/bosh --without-ssl
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking whether gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether make sets $(MAKE)... yes
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking for socket in -lsocket... no
+checking for socket in -linet... no
+checking for inet_addr in -lnsl... yes
+checking for inet_aton in -lresolv... yes
+checking for crypt in -lcrypt... yes
+checking for pthread_create in -lpthread... yes
+checking for pthread_create in -lc_r... no
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether stat file-mode macros are broken... no
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking asm/page.h usability... no
+checking asm/page.h presence... no
+checking for asm/page.h... no
+checking asm/param.h usability... yes
+checking asm/param.h presence... yes
+checking for asm/param.h... yes
+checking cf.h usability... no
+checking cf.h presence... no
+checking for cf.h... no
+checking crt_externs.h usability... no
+checking crt_externs.h presence... no
+checking for crt_externs.h... no
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking kvm.h usability... no
+checking kvm.h presence... no
+checking for kvm.h... no
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking kstat.h usability... no
+checking kstat.h presence... no
+checking for kstat.h... no
+checking libperfstat.h usability... no
+checking libperfstat.h presence... no
+checking for libperfstat.h... no
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking loadavg.h usability... no
+checking loadavg.h presence... no
+checking for loadavg.h... no
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking mach/host_info.h usability... no
+checking mach/host_info.h presence... no
+checking for mach/host_info.h... no
+checking mach/mach.h usability... no
+checking mach/mach.h presence... no
+checking for mach/mach.h... no
+checking mach/mach_host.h usability... no
+checking mach/mach_host.h presence... no
+checking for mach/mach_host.h... no
+checking for memory.h... (cached) yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/in_systm.h usability... yes
+checking netinet/in_systm.h presence... yes
+checking for netinet/in_systm.h... yes
+checking pam/pam_appl.h usability... no
+checking pam/pam_appl.h presence... no
+checking for pam/pam_appl.h... no
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking procfs.h usability... no
+checking procfs.h presence... no
+checking for procfs.h... no
+checking sys/procfs.h usability... yes
+checking sys/procfs.h presence... yes
+checking for sys/procfs.h... yes
+checking procinfo.h usability... no
+checking procinfo.h presence... no
+checking for procinfo.h... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking security/pam_appl.h usability... no
+checking security/pam_appl.h presence... no
+checking for security/pam_appl.h... no
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking sys/cfgodm.h usability... no
+checking sys/cfgodm.h presence... no
+checking for sys/cfgodm.h... no
+checking sys/cfgdb.h usability... no
+checking sys/cfgdb.h presence... no
+checking for sys/cfgdb.h... no
+checking sys/dk.h usability... no
+checking sys/dk.h presence... no
+checking for sys/dk.h... no
+checking sys/dkstat.h usability... no
+checking sys/dkstat.h presence... no
+checking for sys/dkstat.h... no
+checking sys/filio.h usability... no
+checking sys/filio.h presence... no
+checking for sys/filio.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/loadavg.h usability... no
+checking sys/loadavg.h presence... no
+checking for sys/loadavg.h... no
+checking sys/lock.h usability... no
+checking sys/lock.h presence... no
+checking for sys/lock.h... no
+checking sys/mnttab.h usability... no
+checking sys/mnttab.h presence... no
+checking for sys/mnttab.h... no
+checking sys/mutex.h usability... no
+checking sys/mutex.h presence... no
+checking for sys/mutex.h... no
+checking sys/nlist.h usability... no
+checking sys/nlist.h presence... no
+checking for sys/nlist.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/pstat.h usability... no
+checking sys/pstat.h presence... no
+checking for sys/pstat.h... no
+checking sys/queue.h usability... yes
+checking sys/queue.h presence... yes
+checking for sys/queue.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/systemcfg.h usability... no
+checking sys/systemcfg.h presence... no
+checking for sys/systemcfg.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/tree.h usability... no
+checking sys/tree.h presence... no
+checking for sys/tree.h... no
+checking for sys/types.h... (cached) yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking sys/vmmeter.h usability... no
+checking sys/vmmeter.h presence... no
+checking for sys/vmmeter.h... no
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking uvm/uvm.h usability... no
+checking uvm/uvm.h presence... no
+checking for uvm/uvm.h... no
+checking uvm/uvm_extern.h usability... no
+checking uvm/uvm_extern.h presence... no
+checking for uvm/uvm_extern.h... no
+checking vm/vm.h usability... no
+checking vm/vm.h presence... no
+checking for vm/vm.h... no
+checking for netinet/ip.h... yes
+checking for net/if.h... yes
+checking for netinet/ip_icmp.h... yes
+checking for sys/sysctl.h... yes
+checking for sys/mount.h... yes
+checking for sys/proc.h... no
+checking for sys/swap.h... yes
+checking for sys/ucred.h... no
+checking for sys/user.h... yes
+checking for machine/vmparam.h... no
+checking for vm/pmap.h... no
+checking for machine/pmap.h... no
+checking for vm/vm_map.h... no
+checking for vm/vm_object.h... no
+checking for sys/resourcevar.h... no
+checking for uvm/uvm_map.h... no
+checking for uvm/uvm_pmap.h... no
+checking for uvm/uvm_object.h... no
+checking for mode_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for pid_t... (cached) yes
+checking return type of signal handlers... void
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_gmtoff... no
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking for error_at_line... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for strftime... yes
+checking for statfs... yes
+checking for statvfs... yes
+checking for setlocale... yes
+checking for getaddrinfo... yes
+checking for syslog... yes
+checking for vsyslog... yes
+checking for backtrace... yes
+checking for localtime_r... yes
+checking for sys/time.h... (cached) yes
+checking for working GNU strftime... yes
+checking for SOL_IP... yes
+checking for va_copy... yes
+checking pid file location... /var/run
+checking for large files support... enabled
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for PAM support... enabled
+checking for pam_start in -lpam... no
+checking for static SSL support... disabled
+checking for SSL support... disabled
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating config.h
+config.status: config.h is unchanged
+
+monit has been configured with the following options:
+                Architecture: LINUX
+                 PAM support: enabled
+                 SSL support: disabled
+         large files support: enabled
+              Compiler flags: -g -O2 -Wall -D _REENTRANT
+                Linker flags: -lpthread -lcrypt -lresolv -lnsl 
+           pid file location: /var/run
+
++ make -j4
+flex -i l.l
+gcc -c -DLINUX -DSYSCONFDIR="\"/var/vcap/bosh/etc\"" -I. -I./device -I./http -I./process -I./protocols -g -O2 -Wall -D _REENTRANT  lex.yy.c -o lex.yy.o
+lex.yy.c:4818:16: warning: ‘input’ defined but not used [-Wunused-function]
+     static int input  (void)
+                ^
+gcc -rdynamic alert.o collector.o control.o daemonize.o env.o event.o file.o gc.o http.o log.o md5.o monitor.o net.o process.o sendmail.o sha.o signal.o socket.o spawn.o ssl.o state.o status.o util.o validate.o xmalloc.o xml.o device/device_common.o http/base64.o http/cervlet.o http/engine.o http/processor.o process/process_common.o protocols/apache_status.o protocols/clamav.o protocols/default.o protocols/dns.o protocols/dwp.o protocols/ftp.o protocols/generic.o protocols/gps.o protocols/http.o protocols/imap.o protocols/ldap2.o protocols/ldap3.o protocols/lmtp.o protocols/memcache.o protocols/mysql.o protocols/nntp.o protocols/ntp3.o protocols/pgsql.o protocols/pop.o protocols/postfix_policy.o protocols/protocol.o protocols/radius.o protocols/rdate.o protocols/rsync.o protocols/sip.o protocols/smtp.o protocols/ssh.o protocols/tns.o device/sysdep_LINUX.o process/sysdep_LINUX.o y.tab.o lex.yy.o  -lfl -lpthread -lcrypt -lresolv -lnsl  -o monit 
++ make install
+/usr/bin/install -c  -m 755 -d /var/vcap/bosh/bin || exit 1
+/usr/bin/install -c  -m 755 -d /var/vcap/bosh/share/man/man1 || exit 1
+/usr/bin/install -c  -m 555 monit /var/vcap/bosh/bin || exit 1
+/usr/bin/install -c  -m 444 monit.1 /var/vcap/bosh/share/man/man1/monit.1 || exit 1
++ mkdir -p /var/vcap/bosh/etc
+++ ip addr
+++ grep 'inet .*global'
+++ cut -f1 -d /
+++ tail -n 1
+++ cut -f 6 -d ' '
++ monit_addr=121.43.100.169
++ cat
++ chmod 0700 /var/vcap/bosh/etc/monitrc
++ mkdir -p /var/vcap/monit
++ touch /var/vcap/monit/empty.monitrc
++ echo Done.
+Done.
++ '[' '!' -d /sys/fs/cgroup ']'
++ sudo apt-get install -y libmysqlclient-dev libpq-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libmysqlclient-dev is already the newest version.
+libpq-dev is already the newest version.
+The following package was automatically installed and is no longer required:
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 108 not upgraded.
++ ./scripts/install_cf_release.sh
+++ ip addr
+++ grep 'inet .*global'
+++ cut -f 6 -d ' '
+++ cut -f1 -d /
+++ head -n 1
++ NISE_IP_ADDRESS=10.117.36.19
++ '[' collector = '' ']'
++ '[' '' '!=' '' ']'
++ '[' 2 '!=' '' ']'
++ INDEX=2
++ cd nise_bosh
++ bundle install
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Using rake 10.3.2
+Using json 1.8.1
+Using nokogiri 1.5.11
+Using uuidtools 2.1.4
+Using aws-sdk 1.32.0
+Using bcrypt-ruby 3.0.1
+Using beefcake 0.3.7
+Using semi_semantic 1.1.0
+Using bosh_common 1.2611.0
+Using builder 3.1.4
+Using excon 0.25.3
+Using formatador 0.2.5
+Using mime-types 2.3
+Using multi_json 1.10.1
+Using net-ssh 2.9.1
+Using net-scp 1.1.2
+Using ruby-hmac 0.4.0
+Using fog 1.14.0
+Using httpclient 2.2.4
+Using log4r 1.1.10
+Using ruby-atmos-pure 1.0.5
+Using blobstore_client 1.2611.0
+Using gibberish 1.2.2
+Using yajl-ruby 1.1.0
+Using bosh-core 1.2611.0
+Using bosh-director-core 1.2611.0
+Using sequel 3.43.0
+Using rack 1.5.2
+Using rack-protection 1.5.3
+Using tilt 1.4.1
+Using sinatra 1.4.5
+Using daemons 1.1.9
+Using eventmachine 1.0.3
+Using thin 1.5.1
+Using bosh-registry 1.2611.0
+Using bosh_cpi 1.2611.0
+Using bosh_aws_cpi 1.2611.0
+Using bosh_openstack_cpi 1.2611.0
+Using rest-client 1.6.7
+Using bosh_vcloud_cpi 0.5.4
+Using membrane 0.0.5
+Using mysql2 0.3.16
+Using pg 0.15.1
+Using bosh_vsphere_cpi 1.2611.0
+Using warden-protocol 0.1.4
+Using warden-client 0.1.0
+Using bosh_warden_cpi 1.2611.0
+Using json_pure 1.8.1
+Using nats 0.5.0.beta.12
+Using netaddr 1.5.0
+Using rack-test 0.6.2
+Using redis 3.0.7
+Using redis-namespace 1.4.1
+Using vegas 0.1.11
+Using resque 1.23.1
+Using resque-backtrace 0.0.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.1
+Using rufus-scheduler 2.0.24
+Using ffi 1.9.3
+Using sys-filesystem 1.1.2
+Using bosh-director 1.2611.0
+Using bosh-stemcell 1.2611.0
+Using crack 0.3.2
+Using sigar 0.7.2
+Using syslog_protocol 0.9.2
+Using bosh_agent 1.2611.0
+Using highline 1.6.21
+Using minitar 0.5.4
+Using net-ssh-gateway 1.2.0
+Using progressbar 0.9.2
+Using terminal-table 1.4.5
+Using bosh_cli 1.2611.0
+Using diff-lcs 1.2.5
+Using rspec-support 3.0.2
+Using rspec-core 3.0.2
+Using rspec-expectations 3.0.2
+Using rspec-mocks 3.0.2
+Using rspec 3.0.0
+Using bundler 1.10.6
+Bundle complete! 8 Gemfile dependencies, 80 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+++ echo collector
+++ grep -c ,
++ '[' 0 '!=' 0 ']'
++ INSTALL_JOBS=collector
++ for JOB in '${INSTALL_JOBS}'
++ '[' collector = database ']'
++ sudo env PATH=/root/.rbenv/shims:/root/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games bundle exec ./bin/nise-bosh --keep-monit-files -i 2 -y ../cf-release ../manifests/deploy.yml collector -n 10.117.36.19
+The following templates and packages for job collector will be installed.
+    # collector
+        * common
+        * collector
+        * ruby-2.1.4
+#[17805] INFO: Resolving package dependencies...
+#[17805] INFO: Installing the following packages: 
+#[17805] INFO:  * common
+#[17805] INFO:  * ruby-2.1.4
+#[17805] INFO:  * collector
+#[17805] INFO: Installing package common
+#[17805] INFO: The same version of the package is already installed. Skipping
+#[17805] INFO: Installing package ruby-2.1.4
+#[17805] INFO: The same version of the package is already installed. Skipping
+#[17805] INFO: Installing package collector
+#[17805] INFO: Running the packaging script for collector
+Done!
++ set +x
+Done!
+You can launch Cloud Foundry with './scripts/start.sh'
+Restart your server before starting processes if you are using Ubuntu 10.04

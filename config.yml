@@ -1,0 +1,22 @@
+---
+
+# 定制本次安装的模块。all为在本地安装所有模块
+#deploy: "nats hm9000 ccng uaa ha dea loggr gorouter"
+deploy: "nats_hm"
+
+domain: dtbox.dtdream.com
+password: DreamDT228
+org: dtdream
+
+# 定制安装节点，如果deploy指定了all，则定制不会生效。
+component:
+  nats:
+    - ip: 10.168.222.155
+      psw: DreamPaas
+
+  nats_hm:
+    - ip: 10.117.36.19
+      psw: DtDream0209
+
+    - ip: 10.252.117.198
+      psw: DtDream0209
